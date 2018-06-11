@@ -1,5 +1,6 @@
 package jp.co.example.verf.conf;
 
+import org.springframework.boot.autoconfigure.flyway.FlywayDataSource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -17,4 +18,11 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         return DataSourceBuilder.create().build();
     }
-}
+
+    @Bean
+    @FlywayDataSource
+    @ConfigurationProperties(prefix = "flyway")
+    @SuppressWarnings("unused")
+    public DataSource flywayDataSource() {
+        return DataSourceBuilder.create().build();
+    }}

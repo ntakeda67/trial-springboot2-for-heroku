@@ -1,6 +1,6 @@
 # Recipe
 ## Spring Boot
-- [Build with Spring Initializr]: https://start.spring.io/
+- [Build with Spring Initializr](https://start.spring.io/)
     - Gradle Project
         - my favorite task runner
     - With Java
@@ -21,4 +21,9 @@
             - lightweight type safe query RDB 
             
 ## build Heroku app/Heroku PostgreSQL
-ref. https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku            
+ref. [Heroku Dev Center](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)            
+
+
+# Operations
+## DB Migration
+TBD

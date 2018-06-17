@@ -39,7 +39,7 @@ OpenJDK 64-Bit Server VM (build 9.0.4+11, mixed mode)
 ```
 
 ### Operations
-```concept
+```
 % yarn add vue axios
 % yarn add webpack webpack-cli babel-core babel-loader vue-loader vue-template-compiler --dev
 
@@ -51,15 +51,26 @@ ref. [Heroku Dev Center](https://devcenter.heroku.com/articles/deploying-spring-
 
 # Operations
 ## Dev 
-## Local Run
+## Run on Local
 ### on docker-compose
-```concept
+```
 % docker-compose -version
 docker-compose version 1.21.2, build a133471
 ```
-## Build
+
+### operation
+```
+./gradlew jar
+cp build/libs/verf*.jar docker/app/verf.jar # TODO gradle task
+cd docker
+docker-compose up
+# can access app (localhost:8080) from host machine
+```
+
 ## DB Migration
 TBD
+via Flyway 
+see ./src/main/resources/db.migration
 
 # Reference
 - [Spring Boot and vue dev env](https://backpaper0.github.io/ghosts/spring-boot-doma-vue)

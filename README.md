@@ -50,7 +50,13 @@ ref. [Heroku Dev Center](https://devcenter.heroku.com/articles/deploying-spring-
 
 
 # Operations
-## Dev and Local Run
+## Dev 
+## Local Run
+### on docker-compose
+```concept
+% docker-compose -version
+docker-compose version 1.21.2, build a133471
+```
 ## Build
 ## DB Migration
 TBD

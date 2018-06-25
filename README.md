@@ -75,4 +75,4 @@ see ./src/main/resources/db.migration
 
 # Reference
 - [Spring Boot and vue dev env](https://backpaper0.github.io/ghosts/spring-boot-doma-vue)
-- [/.](https://qiita.com/soarflat/items/28bf799f7e0335b68186)
+- [Webpack4](https://qiita.com/soarflat/items/28bf799f7e0335b68186)
